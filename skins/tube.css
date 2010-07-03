@@ -1,0 +1,63 @@
+.tube-css .vjs-controls {
+  opacity: 1!important; color: #000!important;
+  height: 25px!important;
+  padding-left: 102px!important; /* Width of play button + margin */
+  padding-right: 53px!important; /* Width of all the controls to the right of the progress control + margins */
+
+  background-color: #ccc!important;
+  background: #fcfcfc -webkit-gradient(linear, left top, left bottom, from(#fcfcfc), to(#d0d0d0)) left top!important;
+  background: #fcfcfc -moz-linear-gradient(top,  #fcfcfc,  #d0d0d0) left top!important;
+}
+
+.tube-css .vjs-controls > li {
+  height: 23px!important; margin: 0!important; background: none!important;
+  border: 1px solid #b1b1b1!important; border-left-color: #eee!important;
+  border-radius: 0!important; -webkit-border-radius: 0!important; -moz-border-radius: 0!important;
+  box-shadow: none!important; -webkit-box-shadow: none!important; -moz-box-shadow: none!important;
+}
+
+/* Placement of Control Items */
+.tube-css .vjs-controls > li.vjs-play-control       { width: 25px!important; left: 0!important; }
+.tube-css .vjs-controls > li.vjs-progress-control   { width: 100%!important; position: relative!important; }
+.tube-css .vjs-controls > li.vjs-time-control       { width: 75px!important; left: 27px!important; }
+.tube-css .vjs-controls > li.vjs-volume-control     { width: 50px!important; right: 0px!important; }
+
+/* Removing borders on time & progress to join them */
+.tube-css .vjs-controls > li.vjs-progress-control { border-left: none!important; }
+.tube-css .vjs-controls > li.vjs-time-control { border-right: none!important; }
+
+
+/* Play/Pause
+-------------------------------------------------------------------------------- */
+.tube-css .vjs-controls > li:first-child { margin-left: 0!important; border-left-color: #b1b1b1!important; }
+.tube-css .vjs-play-control.vjs-play span { border-left-color: #333!important; border-top-width: 7px!important; border-left-width: 13px!important; border-bottom-width: 7px!important; margin: 5px 0 0 7px!important; }
+.tube-css .vjs-play-control.vjs-pause span { height: 14px!important; margin: 5px auto 0!important; border-left: 4px solid #333!important; border-right: 4px solid #333!important; }
+.tube-css .vjs-play-control.vjs-play:hover span { border-left-color: #CF1A1A!important; }
+.tube-css .vjs-play-control.vjs-pause:hover span { border-left-color: #CF1A1A!important; border-right-color: #CF1A1A!important; }
+
+/* Time Display
+-------------------------------------------------------------------------------- */
+.tube-css .vjs-controls .vjs-time-control { font-size: 11px!important; }
+.tube-css .vjs-controls .vjs-time-control span { line-height: 25px!important; /* Centering vertically */ }
+
+/* Progress
+-------------------------------------------------------------------------------- */
+.tube-css .vjs-progress-holder {
+  margin-right: 10px!important;
+  background-color: #b1b1b1!important;
+  background: #b1b1b1 -webkit-gradient(linear, left top, left bottom, from(#b1b1b1), to(#cacaca)) left top!important;
+  background: #b1b1b1 -moz-linear-gradient(top,  #b1b1b1,  #cacaca) left top!important;
+  border-color: #CACACA!important; border-bottom-color: #eaeaea!important;
+  border-radius: 0!important; -webkit-border-radius: 0!important; -moz-border-radius: 0!important;
+}
+.tube-css .vjs-progress-control .vjs-load-progress { background: #C89191!important; border-radius: 0!important; -webkit-border-radius: 0!important; -moz-border-radius: 0!important; }
+.tube-css .vjs-progress-control .vjs-play-progress { background: #f33!important; background: -webkit-gradient(linear, left top, left bottom, from(#f33), to(#CF1A1A))!important; background: -moz-linear-gradient(top,  #f33,  #CF1A1A)!important; -webkit-border-radius: 0!important; -moz-border-radius: 0!important; border-radius: 0!important; }
+
+/* Volume
+-------------------------------------------------------------------------------- */
+.tube-css .vjs-volume-control ul { padding: 3px 0 0 0!important; }
+.tube-css .vjs-volume-control ul li { border-bottom-color: #ccc!important; }
+/* Volume icon color */
+.tube-css .vjs-volume-control ul li.vjs-volume-level-on { border-color: #333!important; }
+/* Volume icon hovering color */
+.tube-css .vjs-volume-control:hover ul li.vjs-volume-level-on { border-color: #CF1A1A!important; }

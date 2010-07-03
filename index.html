@@ -30,7 +30,33 @@
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
 	</style>
-	
+	  <!-- Include the AudioJS Library -->
+  <script src="audio.js" type="text/javascript" charset="utf-8"></script>
+
+  <script type="text/javascript" charset="utf-8">
+    // Run the script on page load.
+
+    // If using jQuery
+    // $(function(){
+    //   AudioJS.setup();
+    // })
+
+    // If using Prototype
+    // document.observe("dom:loaded", function() {
+    //   AudioJS.setup();
+    // });
+
+    // If not using a JS library
+    window.onload = function(){
+      AudioJS.setup();
+    }
+
+  </script>
+  <!-- Include the AudioJS Stylesheet -->
+  <link rel="stylesheet" href="audio-js.css" type="text/css" media="all" title="Audio JS" charset="utf-8">
+  <link rel="stylesheet" href="skins/hu.css" type="text/css" media="all" title="Audio JS" charset="utf-8">
+  <link rel="stylesheet" href="skins/tube.css" type="text/css" media="all" title="Audio JS" charset="utf-8">
+  <link rel="stylesheet" href="skins/vim.css" type="text/css" media="all" title="Audio JS" charset="utf-8">
 </head>
 
 <body>
@@ -51,11 +77,49 @@
     <div class="description">
       Fork of VideoJS this time for Audio, also have all themes from VideoJS
     </div>
+     <h2>Demo</h2>
+        <!-- Begin AudioJS -->
+  <div class="audio-js-box tube-css">
+    <!-- Using the Audio for Everybody Embed Code http://camendesign.com/code/audio_for_everybody -->
+    <audio class="audio-js" controls preload>
+      <source src="http://www.salacioussongs.com/audio/The%20XX%20-%20Infinity%20(Bachelors%20Of%20Science%20remix).mp3">
+    </audio>
+  </div>
+  <!-- End AudioJS -->
 
+  <!-- Begin AudioJS -->
+  <div class="audio-js-box vim-css">
+    <!-- Using the Audio for Everybody Embed Code http://camendesign.com/code/audio_for_everybody -->
+    <audio class="audio-js" controls preload>
+      <source src="http://www.salacioussongs.com/audio/The%20XX%20-%20Infinity%20(Bachelors%20Of%20Science%20remix).mp3">
+    </audio>
+  </div>
+  <!-- End AudioJS -->
+  
+    <!-- Begin AudioJS -->
+  <div class="audio-js-box hu-css">
+    <!-- Using the Audio for Everybody Embed Code http://camendesign.com/code/audio_for_everybody -->
+    <audio class="audio-js" controls preload>
+      <source src="http://www.salacioussongs.com/audio/The%20XX%20-%20Infinity%20(Bachelors%20Of%20Science%20remix).mp3">
+    </audio>
+  </div>
+  <!-- End AudioJS -->
+  
+    <!-- Begin AudioJS -->
+  <div class="audio-js-box">
+    <!-- Using the Audio for Everybody Embed Code http://camendesign.com/code/audio_for_everybody -->
+    <audio class="audio-js" controls preload>
+      <source src="http://www.salacioussongs.com/audio/The%20XX%20-%20Infinity%20(Bachelors%20Of%20Science%20remix).mp3">
+    </audio>
+  </div>
+  <!-- End AudioJS -->
     <h2>Authors</h2>
-<p>Janez troha (janez.troha@gmail.com)<br/><br/>      </p>
+<p>Janez troha (janez.troha@gmail.com)
+<br/>
+<br/>      </p>
 <h2>Contact</h2>
-<p> (janez.troha@gmail.com)<br/>      </p>
+<p> (janez.troha@gmail.com)
+<br/>      </p>
 
 
     <h2>Download</h2>

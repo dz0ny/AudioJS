@@ -1,0 +1,98 @@
+.hu-css .vjs-controls { 
+  height: 47px!important; opacity: 0.95!important; color: #fff!important; 
+  padding-left: 84px!important; /* Width of play button + margin */
+  padding-right: 0px!important; /* Width of all the controls to the right of the progress control + margins */
+  background: #3A3835!important;
+}
+
+.hu-css .vjs-controls > li {
+  background: none!important;
+  border-radius: 0!important; -webkit-border-radius: 0!important; -moz-border-radius: 0!important;
+  box-shadow: none!important; -webkit-box-shadow: none!important; -moz-box-shadow: none!important;
+}
+
+/* Top Level Items */
+.hu-css .vjs-controls > li.vjs-play-control, 
+.hu-css .vjs-controls > li.vjs-volume-control, 
+.hu-css .vjs-controls > li.vjs-fullscreen-control {
+  bottom: 20px!important; height: 27px!important;
+}
+/* Bottom Level Items */
+.hu-css .vjs-controls > li.vjs-progress-control, .hu-css .vjs-controls > li.vjs-time-control {
+  margin-top: 28px!important; height: 19px!important;
+}
+
+/* Placement of Control Items */
+.hu-css .vjs-controls > li.vjs-play-control       { width: 33px!important; left: 0px!important; }
+.hu-css .vjs-controls > li.vjs-progress-control   { width: 100%!important; position: relative!important; }
+.hu-css .vjs-controls > li.vjs-time-control       { width: 84px!important; left: 0px!important; }
+.hu-css .vjs-controls > li.vjs-volume-control     { width: 43px!important; right: 5px!important; }
+
+/* Play/Pause
+-------------------------------------------------------------------------------- */
+.hu-css .vjs-play-control.vjs-play span { margin: 9px 0 0 12px!important; }
+.hu-css .vjs-play-control.vjs-pause span { margin: 9px 0 0 12px!important; }
+.hu-css .vjs-play-control:hover { background-color: #000!important; }
+
+/* Progress
+-------------------------------------------------------------------------------- */
+.hu-css .vjs-progress-holder { /* Box containing play and load progresses */
+  height: 19px!important; border: none!important;
+  margin: 0px 0px 0 0px!important; /* Placement within the progress control item */
+  background: #000!important;
+  border-radius: 0!important; -webkit-border-radius: 0!important; -moz-border-radius: 0!important;
+}
+.hu-css .vjs-progress-holder li { height: 13px!important; margin-top: 3px!important; border-radius: 0!important; -webkit-border-radius: 0!important; -moz-border-radius: 0!important; }
+.hu-css .vjs-play-progress {
+  /* Default */ background: #777!important;
+  /* Webkit  */ background: -webkit-gradient(linear, left top, left bottom, from(#999), to(#777))!important;
+  /* Firefox */ background: -moz-linear-gradient(top,  #999,  #777)!important;
+}
+.hu-css .vjs-load-progress { background: #555!important; }
+
+/* Time Display
+-------------------------------------------------------------------------------- */
+.hu-css .vjs-controls .vjs-time-control { font-size: 11px!important; background: #000!important; }
+.hu-css .vjs-controls .vjs-time-control span { line-height: 19px!important; /* Centering vertically */ }
+
+/* Volume
+-------------------------------------------------------------------------------- */
+/*.hu-css .vjs-volume-control:hover { background-color: #000!important; }*/
+.hu-css .vjs-volume-control ul { margin: 0 5px 0 5px!important; padding: 9px 0 0 0!important; }
+.hu-css .vjs-volume-control ul li { /* Individual volume bars */
+  margin: 0 2px 0 0!important; /* Space between */
+  width: 3px!important; height: 0px!important; /* Total height is height + bottom border */
+  border-bottom: 12px solid #555!important; /* Default (off) color and height of visible portion */
+}
+.hu-css .vjs-volume-control ul li.vjs-volume-level-on { border-color: #fff!important; /* Volume on bar color */ }
+/* Creating differnt bar heights through height (transparent) and bottom border (visible). */
+.hu-css .vjs-volume-control ul li:nth-child(1) { border-bottom-width: 2px!important; height: 10px!important; }
+.hu-css .vjs-volume-control ul li:nth-child(2) { border-bottom-width: 4px!important; height: 8px!important; }
+.hu-css .vjs-volume-control ul li:nth-child(3) { border-bottom-width: 6px!important; height: 6px!important; }
+.hu-css .vjs-volume-control ul li:nth-child(4) { border-bottom-width: 8px!important; height: 4px!important; }
+.hu-css .vjs-volume-control ul li:nth-child(5) { border-bottom-width: 10px!important; height: 2px!important; }
+
+/* Fullscreen
+-------------------------------------------------------------------------------- */
+.hu-css .vjs-fullscreen-control:hover { background-color: #000!important; }
+.hu-css .vjs-fullscreen-control ul { margin: 8px 0 0 0px!important; padding-left: 13px!important; height: 13px!important; border-left: 1px solid #555!important; }
+.hu-css .vjs-fullscreen-control ul li:nth-child(1) { margin-right: 9px!important; margin-bottom: 5px!important; border-top: 4px solid #fff!important; border-right: 4px solid rgba(0,0,0,0)!important; }
+.hu-css .vjs-fullscreen-control ul li:nth-child(2) { border-top: 4px solid #fff!important; border-left: 4px solid rgba(0,0,0,0)!important; }
+.hu-css .vjs-fullscreen-control ul li:nth-child(3) { clear: both!important; margin: 0 9px 0 0!important; border-bottom: 4px solid #fff!important; border-right: 4px solid rgba(0,0,0,0)!important; }
+.hu-css .vjs-fullscreen-control ul li:nth-child(4) { border-bottom: 4px solid #fff!important; border-left: 4px solid rgba(0,0,0,0)!important; }
+/* Icon when video is in fullscreen mode */
+.hu-css.vjs-fullscreen .vjs-fullscreen-control ul li:nth-child(1) { border: none!important; border-bottom: 4px solid #fff!important; border-left: 4px solid rgba(0,0,0,0)!important; }
+.hu-css.vjs-fullscreen .vjs-fullscreen-control ul li:nth-child(2) { border: none!important; border-bottom: 4px solid #fff!important; border-right: 4px solid rgba(0,0,0,0)!important; }
+.hu-css.vjs-fullscreen .vjs-fullscreen-control ul li:nth-child(3) { border: none!important; border-top: 4px solid #fff!important; border-left: 4px solid rgba(0,0,0,0)!important; }
+.hu-css.vjs-fullscreen .vjs-fullscreen-control ul li:nth-child(4) { border: none!important; border-top: 4px solid #fff!important; border-right: 4px solid rgba(0,0,0,0)!important; }
+
+
+
+
+
+
+
+
+
+
+
