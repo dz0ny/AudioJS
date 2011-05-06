@@ -304,8 +304,7 @@ window.AudioJS = window._V_ = AudioJS;
 ================================================================================ */
 AudioJS.player.extend({
   html5Supported: function(){
-    console.log(AudioJS.browserSupportsAudio() , this.canPlaySource())
-    if (AudioJS.browserSupportsAudio()) {// && this.canPlaySource()) {
+    if (AudioJS.browserSupportsAudio()) {
       return true;
     } else {
       return false;
@@ -715,7 +714,6 @@ AudioJS.player.extend({
       this.triggerResizeListeners();
       return this;
     }
-    console.log(this.audio, this.audio.offsetWidth, this.audio.width)
     return this.audio.offsetWidth || 400;
   },
   height: function(height){
