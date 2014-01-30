@@ -1,44 +1,72 @@
-.vim-css .vjs-controls { 
-  height: 50px!important; opacity: 0.9!important; color: #fff!important; 
-  padding-left: 85px!important; /* Width of play button + margin */
-  padding-right: 135px!important; /* Width of all the controls to the right of the progress control + margins */
+/*
+AudioJS VimCSS Skin (http://videojs.com)
+Version 2.0.0
+*/
+
+.vim-css .ajs-controls {
+  height: 60px; opacity: 0.9; color: #fff;
 }
-.vim-css .vjs-controls > li { 
-  height: 32px!important; width: 25px!important; margin: 8px 0 0 0!important; padding: 0!important; text-align: center!important; background: rgba(23, 35, 34, 0.746094)!important; 
-  border-radius: 0!important; -webkit-border-radius: 0!important; -moz-border-radius: 0!important; 
-  box-shadow: none!important; -webkit-box-shadow: none!important; -moz-box-shadow: none!important;
+.vim-css .ajs-controls > div {
+  height: 32px; top: 18px; padding: 0; text-align: center; background: rgba(23, 35, 34, 0.746094);
+  -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
+  -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;
 }
 /* Placement of Control Items */
-.vim-css .vjs-controls > li.vjs-play-control       { width: 65px!important; left: 10px!important; }
-.vim-css .vjs-controls > li.vjs-progress-control   { width: 100%!important; position: relative!important; }
-.vim-css .vjs-controls > li.vjs-time-control       { width: 75px!important; right: 60px!important; }
-.vim-css .vjs-controls > li.vjs-volume-control     { width: 50px!important; right: 10px!important; border-radius: 0 5px 5px 0!important; -webkit-border-radius: 0 5px 5px 0!important; -moz-border-radius: 0 5px 5px 0!important; }
+.vim-css .ajs-controls > div.ajs-play-control       { width: 65px; left: 10px; }
+.vim-css .ajs-controls > div.ajs-progress-control   { left: 85px; right: 125px; }
+.vim-css .ajs-controls > div.ajs-time-control       { width: 75px; right: 50px; }
+.vim-css .ajs-controls > div.ajs-volume-control     { width: 50px; right: 0px; }
 
 /* Play/Pause
 -------------------------------------------------------------------------------- */
-.vim-css .vjs-controls .vjs-play-control { margin: 0!important; height: 40px!important;  border-radius: 5px!important; -webkit-border-radius: 5px!important; -moz-border-radius: 5px!important; }
-.vim-css .vjs-play-control.vjs-play span { border-left-color: #fff!important; border-top-width: 9px!important; border-left-width: 18px!important; border-bottom-width: 9px!important; margin: 11px 0 0 24px!important; }
-.vim-css .vjs-play-control:hover { background: #00ADEF!important; }
-.vim-css .vjs-play-control.vjs-pause span { width: 5px!important; height: 18px!important; margin: 5px auto 0!important; border-left: 5px solid #fff!important; border-right: 5px solid #fff!important; margin: 11px 0 0 24px!important; }
+.vim-css .ajs-controls .ajs-play-control { top: 10px; margin: 0; height: 40px;  -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+.vim-css .ajs-play-control:hover { background: #00ADEF; }
+.vim-css.ajs-paused .ajs-play-control span { border-left-color: #fff; border-top-width: 9px; border-left-width: 18px; border-bottom-width: 9px; margin: 11px 0 0 24px; }
+.vim-css.ajs-playing .ajs-play-control span { width: 5px; height: 18px; margin: 5px auto 0; border-left: 5px solid #fff; border-right: 5px solid #fff; margin: 11px 0 0 24px; }
 
 /* Progress
 -------------------------------------------------------------------------------- */
-.vim-css .vjs-controls .vjs-progress-control { border-radius: 5px 0 0 5px!important; -webkit-border-radius: 5px 0 0 5px!important; -moz-border-radius: 5px 0 0 5px!important; }
-.vim-css .vjs-progress-control .vjs-progress-holder { height: 8px!important; padding: 1px!important; margin: 10px 5px 0 10px!important; border-color: #666666!important; border-radius: 0!important; -webkit-border-radius: 0!important; -moz-border-radius: 0!important; }
-.vim-css .vjs-progress-control .vjs-play-progress { height: 8px!important; background: #00ADEF!important; border-radius: 0!important; -webkit-border-radius: 0!important; -moz-border-radius: 0!important; }
-.vim-css .vjs-progress-control .vjs-load-progress { height: 8px!important; background: #898F8F!important; border-radius: 0!important; -webkit-border-radius: 0!important; -moz-border-radius: 0!important; }
+.vim-css .ajs-controls .ajs-progress-control { -webkit-border-radius: 5px 0 0 5px; -moz-border-radius: 5px 0 0 5px; border-radius: 5px 0 0 5px; }
+.vim-css .ajs-progress-control .ajs-progress-holder { height: 8px; padding: 1px; margin: 10px 5px 0 10px; border-color: #666666; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; }
+.vim-css .ajs-progress-control .ajs-play-progress { height: 8px; background: #00ADEF; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; }
+.vim-css .ajs-progress-control .ajs-load-progress { height: 8px; background: #898F8F; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; }
 
 /* Time Display
 -------------------------------------------------------------------------------- */
-.vim-css .vjs-controls .vjs-time-control { font-size: 11px!important; }
-.vim-css .vjs-controls .vjs-time-control span { line-height: 32px!important; /* Centering vertically */ }
+.vim-css .ajs-controls .ajs-time-control { font-size: 11px; }
+.vim-css .ajs-controls .ajs-time-control span { line-height: 32px; /* Centering vertically */ }
 
 /* Volume
 -------------------------------------------------------------------------------- */
-.vim-css .vjs-volume-control ul { padding: 7px 0 0 5px!important; width: 30px!important; }
-.vim-css .vjs-volume-control ul li { 
-  float: left!important; margin: 0 2px 0 0!important; padding: 0!important; list-style: none!important; width: 3px!important; height: 3px!important; border-bottom: 12px solid #666666!important; 
-  -webkit-transition: all 100ms linear!important; -moz-transition: all 100ms linear!important;
+.vim-css .ajs-controls .ajs-volume-control { -webkit-border-radius: 0 5px 5px 0; -moz-border-radius: 0 5px 5px 0; border-radius: 0 5px 5px 0; }
+.vim-css .ajs-volume-control div { padding: 7px 0 0 5px; width: 30px; }
+.vim-css .ajs-volume-control div span {
+  float: left; margin: 0 2px 0 0; padding: 0; width: 3px; height: 3px; border-bottom: 12px solid #666666;
+  -webkit-transition: all 100ms linear; -moz-transition: all 100ms linear;
 }
-.vim-css .vjs-volume-control ul li.vjs-volume-level-on { border-color: #00ADEF!important; }
-.vim-css .vjs-volume-control ul li:hover { height: 0!important; border-bottom-width: 15px!important; }
+.vim-css .ajs-volume-control div span.ajs-volume-level-on { border-color: #00ADEF; }
+.vim-css .ajs-volume-control div span:hover { height: 0; border-bottom-width: 15px; }
+
+/* Big Play Button (at start)
+---------------------------------------------------------*/
+.vim-css div.ajs-big-play-button {
+  width: 130px; height: 80px; margin: -40px 0 0 -65px;
+  border: none; opacity: 0.9;
+  -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;
+
+  background: rgba(23, 35, 34, 0.746094);
+
+  /* CSS Shadows */
+  -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none;
+}
+.vim-css div.ajs-big-play-button:hover {
+  background: #00ADEF;
+  opacity: 1;
+}
+.vim-css div.ajs-big-play-button span {
+  margin: 22px 0 0 48px;
+  /* Drawing the play triangle with borders - http://www.infimum.dk/HTML/slantinfo.html */
+  border-left: 36px solid #fff; /* Width & Color of play icon */
+  /* Height of play icon is total top & bottom border widths. Color is transparent. */
+  border-top: 18px solid rgba(0,0,0,0); border-bottom: 18px solid rgba(0,0,0,0);
+}
